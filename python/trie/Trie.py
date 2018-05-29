@@ -2,7 +2,8 @@ class Node:
     def __init__(self, value=None):
         self.children = {}
         self.value = value
-        is_leaf = False
+        self.is_leaf = False
+
 
 class Trie:
     def __init__(self):

@@ -1,14 +1,14 @@
-class Queue:
+class Stack:
     def __init__(self):
         self.items = []
 
     def is_empty(self):
-        return self.items == []
+        return not bool(len(self.items))
 
-    def enqueue(self, item):
-        self.items.insert(0, item)
+    def push(self, item):
+        self.items.append(item)
 
-    def dequeue(self):
+    def pop(self):
         return self.items.pop()
 
     def size(self):

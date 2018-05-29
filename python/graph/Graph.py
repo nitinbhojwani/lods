@@ -13,17 +13,17 @@ class Graph(object):
         return self.__generate_edges()
 
     def add_vertex(self, vertex):
-        """ If the vertex "vertex" is not in 
+        """ If the vertex "vertex" is not in
             self.__graph_dict, a key "vertex" with an empty
-            list as a value is added to the dictionary. 
-            Otherwise nothing has to be done. 
+            list as a value is added to the dictionary.
+            Otherwise nothing has to be done.
         """
         if vertex not in self.__graph_dict:
             self.__graph_dict[vertex] = []
 
     def add_edge(self, edge):
-        """ assumes that edge is of type set, tuple or list; 
-            between two vertices can be multiple edges! 
+        """ assumes that edge is of type set, tuple or list;
+            between two vertices can be multiple edges!
         """
         edge = set(edge)
         (vertex1, vertex2) = tuple(edge)
@@ -33,10 +33,10 @@ class Graph(object):
             self.__graph_dict[vertex1] = [vertex2]
 
     def __generate_edges(self):
-        """ A static method generating the edges of the 
-            graph "graph". Edges are represented as sets 
-            with one (a loop back to the vertex) or two 
-            vertices 
+        """ A static method generating the edges of the
+            graph "graph". Edges are represented as sets
+            with one (a loop back to the vertex) or two
+            vertices
         """
         edges = []
         for vertex in self.__graph_dict:
@@ -52,12 +52,12 @@ class Graph(object):
         from queue import Queue
         queue = Queue()
         visited = {}
-        queue.enqueue(self.__graph_dict.keys()[0])        
-        while (!queue.is_empty):
+        queue.enqueue(self.__graph_dict.keys()[0])
+        while(not queue.is_empty):
             current_node = queue.dequeue()
             if not visited.get(current_node):
                 visited[current_node] = True
-            """ Below written code helps in termination """    
+            """ Below written code helps in termination """
             if current_node == search_input:
                 return True
             adjacent_nodes = self.__graph_dict[current_node]
@@ -71,6 +71,19 @@ class Graph(object):
         """
         from stack import Stack
         stack = Stack()
+        visited = {}
+        stack.push(self.__graph_dict.keys()[0])
+        while (not stack.is_empty):
+            current_node = stack.pop()
+            if not visited.get(current_node):
+                visited[current_node] = True
+            """ Below written code helps in termination """
+            if current_node == search_input:
+                return True
+            adjacent_nodes = self.__graph_dict[current_node]
+            for node in adjacent_nodes:
+                stack.push(node)
+        return False
 
     def __str__(self):
         res = "vertices: "
