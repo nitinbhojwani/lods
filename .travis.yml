@@ -13,4 +13,4 @@ install:
 
 script:
  - fab -f pep8-checker/fabfile.py check:graph/ check:linked_list/ check:pyqueue/ check:stack/ check:trie/ check_files:tests.py
- - python tests
+ - python tests.py
