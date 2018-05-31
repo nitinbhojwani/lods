@@ -1,7 +1,0 @@
-# Dynamic Programming - 
-# https://people.eecs.berkeley.edu/~vazirani/algorithms/chap6.pdf
-http://www.geeksforgeeks.org/dynamic-programming-set-11-egg-dropping-puzzle/
-https://www.hackerearth.com/practice/notes/dynamic-programming-problems-involving-grids/
-
-# Traversal -
-http://www.geeksforgeeks.org/find-number-of-islands/

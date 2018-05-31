@@ -1,2 +1,4 @@
 *.pyc
 pep8-checker
+venv
+__pycache__

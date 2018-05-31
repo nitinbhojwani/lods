@@ -1,15 +1,13 @@
 language: python
 
 python:
- - "2.7"
- - "3.4"
- - "3.5"
  - "3.6"
 
 install:
  - git clone https://github.com/nitinbhojwani/pep8-checker
- - if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; then pip install -r pep8-checker/requirements-python2.txt; fi
- - if [[ $TRAVIS_PYTHON_VERSION == 3* ]]; then pip install -r pep8-checker/requirements-python3.txt; fi
+ - pip install -r pep8-checker/requirements-python3.txt
+ - export PYTHONPATH=$PYTHONPATH:$TRAVIS_BUILD_DIR
 
 script:
- - cd pep8-checker && fab check:../python
+ - fab -f pep8-checker/fabfile.py check:graph/ check:linked_list/ check:pyqueue/ check:stack/ check:tests/ check:trie/
+ - python tests
