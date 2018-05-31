@@ -4,7 +4,6 @@ python:
  - "3.4"
  - "3.5"
  - "3.6"
- - "3.7"
 
 install:
  - git clone https://github.com/nitinbhojwani/pep8-checker
