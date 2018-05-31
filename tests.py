@@ -1,8 +1,8 @@
 def test():
     import unittest
-    from test_graph import TestGraph
-    from test_queue import TestQueue
-    from test_stack import TestStack
+    from graph.test_graph import TestGraph
+    from pyqueue.test_queue import TestQueue
+    from stack.test_stack import TestStack
 
     test_cases = [
         TestGraph,
