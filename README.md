@@ -4,9 +4,11 @@
 
 [![Build Status](https://travis-ci.org/nitinbhojwani/lods.svg?branch=master)](https://travis-ci.org/nitinbhojwani/lods)
 
-This repository is intended to define basic data-structures in Python.
+Define data-structures in pure Python3.
 
 Current implementation includes:
+* LinkedList
 * Graph
 * Queue
 * Stack
+* Trie
