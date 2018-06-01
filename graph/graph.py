@@ -25,12 +25,10 @@ class Graph:
         if vertex not in self.graph_dict:
             self.graph_dict[vertex] = []
 
-    def add_edge(self, edge):
+    def add_edge(self, vertex1, vertex2):
         """ assumes that edge is of type set, tuple or list;
             between two vertices can be multiple edges!
         """
-        edge = set(edge)
-        (vertex1, vertex2) = tuple(edge)
         if vertex1 in self.graph_dict:
             self.graph_dict[vertex1].append(vertex2)
         else:
