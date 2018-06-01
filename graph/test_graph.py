@@ -9,7 +9,7 @@ class TestGraph(unittest.TestCase):
             self.graphObj.add_vertex(i)
 
         for i in range(9):
-            self.graphObj.add_edge([i, i+1])
+            self.graphObj.add_edge(i, i+1)
 
     def test_add_vertices_and_edges(self):
         self.assertEqual(self.graphObj.get_vertices(), [i for i in range(10)])
