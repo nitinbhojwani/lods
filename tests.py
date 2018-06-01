@@ -3,11 +3,13 @@ def test():
     from graph.test_graph import TestGraph
     from pyqueue.test_queue import TestQueue
     from stack.test_stack import TestStack
+    from trie.test_trie import TestTrie
 
     test_cases = [
         TestGraph,
         TestQueue,
-        TestStack
+        TestStack,
+        TestTrie
     ]
 
     suites = [unittest.defaultTestLoader.loadTestsFromTestCase(
