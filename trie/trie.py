@@ -19,7 +19,7 @@ class Trie:
             curr_node = curr_node.children[word[i]]
         curr_node.is_leaf = True
 
-    def look_up(self, word):
+    def lookup(self, word):
         curr_node = self.root
         if not word:
             return False
