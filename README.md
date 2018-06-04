@@ -8,6 +8,7 @@ Define data-structures in pure Python3.
 
 Current implementation includes:
 * LinkedList
+* DoublyLinkedList
 * Graph
 * Queue
 * Stack
