@@ -1,5 +1,6 @@
 def test():
     import unittest
+    from binary_tree.test_binary_tree import TestBinaryTree
     from doubly_linked_list.test_doubly_linked_list import TestDoublyLinkedList
     from graph.test_graph import TestGraph
     from linked_list.test_linked_list import TestLinkedList
@@ -8,6 +9,7 @@ def test():
     from trie.test_trie import TestTrie
 
     test_cases = [
+        TestBinaryTree,
         TestDoublyLinkedList,
         TestGraph,
         TestLinkedList,
