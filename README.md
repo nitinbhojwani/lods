@@ -7,8 +7,10 @@
 Define data-structures in pure Python3.
 
 Current implementation includes:
-* LinkedList
+* BinarySearchTree
+* BinaryTree
 * DoublyLinkedList
+* LinkedList
 * Graph
 * Queue
 * Stack
