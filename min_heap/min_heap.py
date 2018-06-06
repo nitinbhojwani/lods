@@ -70,9 +70,10 @@ class MinHeap:
         return (2 * i) + 1
 
     @staticmethod
+    def parent(i):
+        return (i-1) // 2
+
+    @staticmethod
     def right(i):
         return (2 * i) + 2
 
-    @staticmethod
-    def parent(i):
-        return (i-1) // 2
