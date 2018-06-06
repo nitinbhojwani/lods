@@ -10,8 +10,9 @@ Current implementation includes:
 * BinarySearchTree
 * BinaryTree
 * DoublyLinkedList
-* LinkedList
 * Graph
+* LinkedList
+* MinHeap
 * Queue
 * Stack
 * Trie
