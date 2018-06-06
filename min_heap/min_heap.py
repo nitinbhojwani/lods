@@ -76,4 +76,3 @@ class MinHeap:
     @staticmethod
     def right(i):
         return (2 * i) + 2
-
