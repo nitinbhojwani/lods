@@ -5,6 +5,7 @@ def test():
     from doubly_linked_list.test_doubly_linked_list import TestDoublyLinkedList
     from graph.test_graph import TestGraph
     from linked_list.test_linked_list import TestLinkedList
+    from max_heap.test_max_heap import TestMaxHeap
     from min_heap.test_min_heap import TestMinHeap
     from pyqueue.test_queue import TestQueue
     from stack.test_stack import TestStack
@@ -16,6 +17,7 @@ def test():
         TestDoublyLinkedList,
         TestGraph,
         TestLinkedList,
+        TestMaxHeap,
         TestMinHeap,
         TestQueue,
         TestStack,
