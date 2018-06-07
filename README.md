@@ -12,6 +12,7 @@ Current implementation includes:
 * DoublyLinkedList
 * Graph
 * LinkedList
+* MaxHeap
 * MinHeap
 * Queue
 * Stack
