@@ -1,5 +1,6 @@
 def test():
     import unittest
+    from avl_tree.test_avl_tree import TestAvlTree
     from binary_search_tree.test_binary_search_tree import TestBinarySearchTree
     from binary_tree.test_binary_tree import TestBinaryTree
     from doubly_linked_list.test_doubly_linked_list import TestDoublyLinkedList
@@ -12,6 +13,7 @@ def test():
     from trie.test_trie import TestTrie
 
     test_cases = [
+        TestAvlTree,
         TestBinarySearchTree,
         TestBinaryTree,
         TestDoublyLinkedList,
